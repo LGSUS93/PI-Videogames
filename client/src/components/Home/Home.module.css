@@ -1,0 +1,173 @@
+.divTwoColum {
+    display: flex;
+    background-image: url("../../images/controles.png");
+    background-repeat: repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.firstColum {
+    width: 12%;
+    position: fixed;
+    margin-top: 58px;
+    background-color: #060047;
+    height: 100%;
+}
+
+.btn {
+    border-width: 2px;
+    border-radius: 10%;
+    cursor: pointer;
+    padding-left: 5px;
+    margin-left: 2px;
+    margin-top: 53px;
+}
+
+.btn:hover {
+    color: white;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    z-index: 1;
+     transition:all .5s ease-in-out;
+}
+
+.imgs {
+    max-width: 100%;
+    width: 30px;
+    height: 30px;
+}
+
+.exit_img{
+    max-width: 100%;
+    width: 50px;
+    height: 50px;
+}
+
+.secondColum {
+    width: 85%;
+    padding-top: 55px;
+    padding-left: 160px; 
+}
+
+.home{
+    display: flex;
+}
+
+.title_img{
+    max-width: 100%;
+    width: 30%;
+    height: 5%;
+}
+
+.message{
+    margin-top: 320px;
+    color: white;
+    display: flex;
+    position: fixed;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.btnLeave {
+    display: flex;
+    background-color: white;
+    cursor: pointer;
+    margin-left: 1080px;
+    margin-top: 280px;
+    position: fixed;
+    padding: 15px;
+}
+
+.btnLeave:hover {
+    color: white;
+
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    z-index: 1;
+    -webkit-box-shadow: 0px 1px 10px 1px #060047;
+            box-shadow: 0px 1px 10px 1px #060047;
+    transition:all .5s ease-in-out;
+}
+
+
+.divCards {
+    display: grid;
+    flex-direction: row;
+    justify-content: space-around;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    width: 100%;
+    margin-left: 90px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+
+.loading {
+    justify-content: center;
+    text-align: center;
+    padding-left: 470px;
+    padding-top: 100px;
+}
+
+
+
+
+@font-face {
+    font-family: 'myFont2';
+    src: url('../../fontsType/Perfect\ DOS\ VGA\ 437.ttf');
+}
+
+
+
+@media screen and (max-width: 700px) {
+
+    .firstColum {
+        width: 100%;
+        position: fixed;
+        margin-top: 55px;
+        height: auto;
+        display: flex;
+    }
+
+    .btn {
+        padding-left: 5px;
+        margin-left: 25px;
+        margin-right: 20px;
+        margin-top: auto;
+        margin-bottom: auto;
+        font-size: 16px;
+    }
+
+
+    .secondColum {
+        width: 100%;
+        padding-top: 190px;
+        padding-left: 0px;
+        margin-right: auto;
+        text-align: center; 
+    }
+    
+    .title {
+        font-size: 20px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .loading {
+        padding-left: 0px;
+        padding-top: 50px;
+        width: 50px;
+    }
+
+    .divLoading {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .divCards {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 0px
+    }
+}

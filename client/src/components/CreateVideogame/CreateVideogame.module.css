@@ -1,0 +1,218 @@
+.divGeneral {
+    display: flex;
+    background-image: url("../../images/controles.png");
+    background-repeat: repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.divCreate {
+    margin-top: 100px;
+    background-color: #060047;
+    border: 5px solid #B3005E;
+    margin-top: 8%;
+    border-radius: 5%;
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-bottom: 10%;
+    width: 60%;
+}
+
+.title {
+    color: white;
+    font-family: 'myFont2';
+    font-weight: lighter;
+}
+
+.data {
+    display: flex;
+    text-align: start;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.crt_cncl {
+    display: flex;
+}
+
+.firstColumn {
+    padding-right: 20px;
+}
+
+label {
+    color: white;
+    font-size: 18px;
+}
+
+.input {
+    background-color: white;
+    border-radius: 8%;
+    font-size: 15px;
+    font-family: monospace;
+    width: 190px;
+}
+
+.inputDescription {
+    height: 85px;
+    width: 190px;
+    background-color: white;
+    font-size: 15px;
+    border-radius: 8%;
+}
+
+select {
+    appearance: none;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    height: 3em;
+    padding: 0 1em 0 1em;
+    border-radius: 0.25em;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.selectGenres {
+    background-color: white;
+    border-radius: 8%;
+    font-size: 15px;
+    font-family: monospace;
+    width: 190px;
+}
+
+.secondColumn {
+    padding-right: 20px;
+}
+
+.divMultiSelect {
+    display: flex;
+    margin-top: 10px;
+}
+
+.multiSelect {
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.imgs_delete {
+    max-width: 100%;
+    width: 12px;
+    height: 12px;
+}
+
+.btn {
+    border-width: 2px;
+    border-radius: 10%;
+    cursor: pointer;
+    padding-left: 5px;
+    margin-left: 70%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.btn_cncl{
+    border-width: 2px;
+    border-radius: 10%;
+    cursor: pointer;
+    padding-left: 5px;
+    margin-right: 2px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.btn:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    z-index: 1;
+    -webkit-box-shadow: 0px 1px 10px 1px #060047;
+            box-shadow: 0px 1px 10px 1px #060047;
+     transition:all .5s ease-in-out;
+}
+
+.imgs_crt{
+    max-width: 100%;
+    width: 60px;
+    height: 60px;
+}
+
+.btn_cncl:hover {
+    color: white;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    z-index: 1;
+    -webkit-box-shadow: 0px 1px 10px 1px #060047;
+            box-shadow: 0px 1px 10px 1px #060047;
+     transition:all .5s ease-in-out;
+}
+
+.message{
+    margin-top: 320px;
+    color: white;
+    display: flex;
+    position: fixed;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'myFont2';
+    src: url('../../fontsType/Perfect\ DOS\ VGA\ 437.ttf');
+}
+
+@media screen and (max-width: 700px) {
+
+    .divCreate {
+        margin-top: 85px;
+        margin-bottom: 20px;
+        width: 80%;
+    }
+    
+    .title {
+        font-size: 22px;
+    }
+    
+    .data {
+        display: block;
+        padding-left: auto;
+        padding-right: 0px;
+    }
+
+    label {
+        font-size: 17px;
+    }
+
+    .input {
+        width: 95%;
+        font-size: 12px;
+    }
+
+    .firstColumn {
+        margin-bottom: 20px;
+    }
+
+    .secondColumn {
+        margin-bottom: 20px;
+    }
+
+    .inputDescription {
+        height: 60px;
+        width: 95%;
+        font-size: 12px;
+    }
+
+    #inputRating {
+        width: 88%;
+    }
+
+    .selectGenres {
+        width: 90%;
+    }
+
+    .btn {
+        margin-top: 35px;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+}
